@@ -108,9 +108,9 @@
             };
         },
         created() {
-            axios.get('https://backendpwl.mammam.website/schedules/').then(response => {
+            axios.get('http://fp-pwl.test/schedules/').then(response => {
                 this.dataValue = response.data.data;
-                axios.get('https://backendpwl.mammam.website/classrooms/').then(response => {
+                axios.get('http://fp-pwl.test/classrooms/').then(response => {
                         this.dataClass = response.data.data;
                     });
             });
@@ -134,7 +134,7 @@
             },
             PickSchedule(scId, fgId, clsId, keyLocation, keyDate, keyTime, keyStatus)
             {
-                axios.put(`https://backendpwl.mammam.website/schedule/${scId}`, {
+                axios.put(`http://fp-pwl.test/schedule/${scId}`, {
                     fotografer_id: fgId,
                     classroom_id: clsId,
                     location: keyLocation,

@@ -90,7 +90,7 @@
             };
         },
         created() {
-            axios.get('https://backendpwl.mammam.website/schools/').then(response => {
+            axios.get('http://fp-pwl.test/schools/').then(response => {
                 this.dataSekolah = response.data.data;
                 console.log(response.data.data);
 
@@ -118,7 +118,7 @@
             },
             PostDelete(id)
             {
-                axios.delete(`https://backendpwl.mammam.website/school/${id}`)
+                axios.delete(`http://fp-pwl.test/school/${id}`)
                     .then(response => {
                         this.dataSekolah.splice(this.dataSekolah.indexOf(id), 1);
                         console.log(response);

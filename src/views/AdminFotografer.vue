@@ -89,7 +89,7 @@
             };
         },
         created() {
-            axios.get('https://backendpwl.mammam.website/fotografers/').then(response => {
+            axios.get('http://fp-pwl.test/fotografers/').then(response => {
                 this.dataFg = response.data.data;
                 console.log(response.data.data);
 
@@ -114,7 +114,7 @@
             },
             PostDelete(id)
             {
-                axios.delete(`https://backendpwl.mammam.website/fotografer/${id}`)
+                axios.delete(`http://fp-pwl.test/fotografer/${id}`)
                     .then(response => {
                         this.dataFg.splice(this.dataFg.indexOf(id), 1);
                         console.log(response);

@@ -113,11 +113,11 @@
             };
         },
         created() {
-            axios.get('https://backendpwl.mammam.website/schedules/').then(response => {
+            axios.get('http://fp-pwl.test/schedules/').then(response => {
                 this.dataValue = response.data.data;
-                axios.get('https://backendpwl.mammam.website/fotografers/').then(response => {
+                axios.get('http://fp-pwl.test/fotografers/').then(response => {
                     this.dataFg = response.data.data;
-                    axios.get('https://backendpwl.mammam.website/classrooms/').then(response => {
+                    axios.get('http://fp-pwl.test/classrooms/').then(response => {
                         this.dataClass = response.data.data;
                     });
                 });
@@ -142,7 +142,7 @@
                 });
             },
             PostDelete(id) {
-                axios.delete(`https://backendpwl.mammam.website/schedule/${id}`)
+                axios.delete(`http://fp-pwl.test/schedule/${id}`)
                     .then(response => {
                         this.dataValue.splice(this.dataValue.indexOf(id), 1);
                         console.log(response);

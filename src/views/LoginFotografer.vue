@@ -60,7 +60,7 @@
                     formData.append("password", this.password);
 
                     const options = {
-                        url: "https://backendpwl.mammam.website/fotografer/login",
+                        url: "http://fp-pwl.test/fotografer/login",
                         method: "post",
                         headers: {
                             "Content-Type": "multipart/form-data"

@@ -93,7 +93,7 @@
             };
         },
         created() {
-            axios.get(`https://backendpwl.mammam.website/school/${this.$route.params.id}/list`).then(response => {
+            axios.get(`http://fp-pwl.test/school/${this.$route.params.id}/list`).then(response => {
                 this.valueData = response.data.data;
                 console.log(response.data.data);
 
@@ -122,7 +122,7 @@
             },
             PostDelete(id)
             {
-                axios.delete(`https://backendpwl.mammam.website/classroom/${id}`)
+                axios.delete(`http://fp-pwl.test/classroom/${id}`)
                     .then(response => {
                         this.valueData.splice(this.valueData.indexOf(id), 1);
                         console.log(response);

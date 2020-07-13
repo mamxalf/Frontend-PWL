@@ -106,7 +106,7 @@
                 });
             },
             PostStore() {
-                axios.post('https://backendpwl.mammam.website/inputs/', {
+                axios.post('http://fp-pwl.test/inputs/', {
                     schedule_id: localStorage.getItem('key-sch'),
                     name: this.dataValue.name,
                     file_name: this.dataValue.file_name

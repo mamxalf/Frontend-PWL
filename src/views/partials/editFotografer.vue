@@ -108,7 +108,7 @@
             };
         },
         created() {
-            axios.get(`https://backendpwl.mammam.website/fotografer/${this.$route.params.id}`)
+            axios.get(`http://fp-pwl.test/fotografer/${this.$route.params.id}`)
                 .then((response) => {
                 this.dataFg = response.data.data;
             });
@@ -130,7 +130,7 @@
                 });
             },
             // PostStore() {
-            //     axios.post('https://backendpwl.mammam.website/fotografers/', this.dataFg)
+            //     axios.post('http://fp-pwl.test/fotografers/', this.dataFg)
             //         .then((response) => {
             //             this.$router.push({
             //                 name: 'AdminFotografer'
@@ -141,7 +141,7 @@
             //     });
             // }
             PostUpdate() {
-                axios.put(`https://backendpwl.mammam.website/fotografer/${this.$route.params.id}`, this.dataFg)
+                axios.put(`http://fp-pwl.test/fotografer/${this.$route.params.id}`, this.dataFg)
                     .then((response) => {
                         this.$router.push({
                             name: 'AdminFotografer'

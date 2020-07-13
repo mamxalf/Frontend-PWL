@@ -82,7 +82,7 @@
             };
         },
         created() {
-            axios.get(`https://backendpwl.mammam.website/classroom/${this.$route.params.id}`)
+            axios.get(`http://fp-pwl.test/classroom/${this.$route.params.id}`)
                 .then((response) => {
                 this.dataValue = response.data.data;
             });
@@ -104,7 +104,7 @@
                 });
             },
             // PostStore() {
-            //     axios.post('https://backendpwl.mammam.website/fotografers/', this.dataValue)
+            //     axios.post('http://fp-pwl.test/fotografers/', this.dataValue)
             //         .then((response) => {
             //             this.$router.push({
             //                 name: 'AdminFotografer'
@@ -115,7 +115,7 @@
             //     });
             // }
             PostUpdate() {
-                axios.put(`https://backendpwl.mammam.website/classroom/${this.$route.params.id}`, this.dataValue)
+                axios.put(`http://fp-pwl.test/classroom/${this.$route.params.id}`, this.dataValue)
                     .then((response) => {
                         this.$router.push({
                             name: 'AdminSekolah'

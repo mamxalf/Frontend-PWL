@@ -61,7 +61,7 @@ export default {
         formData.append("password", this.password);
 
         const options = {
-          url: "https://backendpwl.mammam.website/auth/login",
+          url: "http://fp-pwl.test/auth/login",
           method: "post",
           headers: {
             "Content-Type": "multipart/form-data"

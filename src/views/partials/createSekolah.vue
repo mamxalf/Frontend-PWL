@@ -100,7 +100,7 @@
                 });
             },
             PostStore() {
-                axios.post('https://backendpwl.mammam.website/schools/', this.dataSekoah)
+                axios.post('http://fp-pwl.test/schools/', this.dataSekoah)
                     .then((response) => {
                         this.$router.push({
                             name: 'AdminSekolah'

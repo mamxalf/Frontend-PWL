@@ -137,7 +137,7 @@
                 });
             },
             PostStore() {
-                axios.post('https://backendpwl.mammam.website/schedules/', this.dataJadwal)
+                axios.post('http://fp-pwl.test/schedules/', this.dataJadwal)
                     .then((response) => {
                         this.$router.push({
                             name: 'AdminJadwal'

@@ -35,6 +35,7 @@
                                                         <label for="">Username</label>
                                                         <input type="text" class="form-control"
                                                             v-model="dataFg.username" placeholder="Username">
+                                                            <small class="text-danger">min 5 character</small>
                                                     </div>
                                                 </div>
                                                 <div class="col">
@@ -127,7 +128,7 @@
                 });
             },
             PostStore() {
-                axios.post('https://backendpwl.mammam.website/fotografers/', this.dataFg)
+                axios.post('http://fp-pwl.test/fotografers/', this.dataFg)
                     .then((response) => {
                         this.$router.push({
                             name: 'AdminFotografer'
